@@ -27,7 +27,7 @@
     //image rotator
 
     let imageAr = ['images/view1.jpg','images/view2.jpg','images/view3.jpg','images/view4.jpg',
-'images./view5.jpg','images/view6.jpg']
+'images/view5.jpg','images/view6.jpg']
 
     let count = 0
     document.getElementById("myImages").setAttribute("src",imageAr[count])
