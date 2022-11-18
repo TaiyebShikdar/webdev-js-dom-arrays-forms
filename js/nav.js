@@ -7,7 +7,8 @@
     console.info(url)
 
     let filename = url.split("/").pop()
-    console.info(filename)
+    let listOfLinks = document.querySelectorAll("nav ul li")
+    console.dir(listOfLinks)
 
 
 
