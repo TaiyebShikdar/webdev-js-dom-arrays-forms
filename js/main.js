@@ -24,6 +24,23 @@
         document.body.setAttribute("class",newColour)
     }
 
+    //image rotator
+
+    let imageAr = ['images/view1.jpg','images/view2.jpg','images/view3.jpg','images/view4.jpg',
+'images./view5.jpg','images/view6.jpg']
+
+    let count = 0
+    document.getElementById("myImages").setAttribute("src",imageAr[count])
+    setInterval(chgImage,1000)
+
+    function chgImage(){
+        count++
+        if(count === imageAr.length){
+            count = 0
+        }
+        
+        document.getElementById("myImages").setAttribute("src",imageAr[count])
+    }
     //background colour selector
     /*
     let redBtn = document.querySelector(".red")
