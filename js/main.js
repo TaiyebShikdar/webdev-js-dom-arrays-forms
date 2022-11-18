@@ -12,8 +12,20 @@
         console.info("o no i got clicked ")
         
     })
+    let colourBtns = document.querySelectorAll(".colPicker")
+
+    for (let i = 0; i < colourBtns.length;i++){
+        colourBtns[i.addEventListener("click",chgColour)]
+    }
+
+    function chgColour(ev){
+        console.dir(ev.target.classList)
+        let newColour = ev.target.classList[0] + "Back"
+        document.body.setAttribute("class",newColour)
+    }
 
     //background colour selector
+    /*
     let redBtn = document.querySelector(".red")
     let bodyElement = document.querySelector("body")
     redBtn.addEventListener("click",function(){
@@ -35,6 +47,8 @@
     })
     
     //end
+    */
+
 })()
 
 
