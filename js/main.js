@@ -15,7 +15,7 @@
     let colourBtns = document.querySelectorAll(".colPicker")
 
     for (let i = 0; i < colourBtns.length;i++){
-        colourBtns[i.addEventListener("click",chgColour)]
+        colourBtns[i].addEventListener("click",chgColour)
     }
 
     function chgColour(ev){
@@ -38,7 +38,7 @@
         if(count === imageAr.length){
             count = 0
         }
-        
+
         document.getElementById("myImages").setAttribute("src",imageAr[count])
     }
     //background colour selector
