@@ -9,7 +9,7 @@
     let filename = url.split("/").pop()
     let listOfLinks = document.querySelectorAll("nav ul li")
     
-
+    
     for (var i = 0; i<listOfLinks.length;i++){
         let curentLink = listOfLinks[i].querySelector("a").getAttribute("href")
         console.info(currentLink)
