@@ -13,6 +13,10 @@
     for (var i = 0; i<listOfLinks.length;i++){
         let curentLink = listOfLinks[i].querySelector("a").getAttribute("href")
         console.info(currentLink)
+        if(currentLink === fileName){
+            listOfLinks[i].setAttribute("class","currentPage")
+            break
+        }
     }
 
 
